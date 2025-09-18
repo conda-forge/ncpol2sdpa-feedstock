@@ -1,5 +1,5 @@
 {% set name = "ncpol2sdpa" %}
-{% set version = "1.12.2" %}
+{% set version = "1.14.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 11233a8950e3e4918d19c90c41bcf259b17f2daa645b05432d5e1c51a3bdb0f7
+  sha256: 71d250cf8cf5fd9f8f6efe3a3e0d79b535f8c36794977c4ee561e49a810604de
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
